@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'droidfont';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+*{
+    margin: 0px;
+}
+:root{ /* Variáveis em CSS ficam nessa propriedade */
+    --cor0: #C5EBD6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2fa866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'droidfont', cursive;
+}
+body{
+    margin: 0px;
+    text-align: center;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+    margin: 0%;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.342);
+}
+header>h1{
+    padding: 25px;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.363);
+    font-weight: normal;
+}
+header>p{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.26);
+}
+nav{
+    text-align: left;
+    margin-top: 30px;
+}
+nav>a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 25px;
+    border-radius: 5px;
+    padding: 5px;
+}
+nav > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transition-duration: 0.5s;
+}
+h1, h2{
+    font-family: var(--fonte-android);
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--cor5);
+    font-weight: normal;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    background-image: linear-gradient(to right, var(--cor1), white);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.342);
+    margin-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.d{
+    color: var(--cor4);
+    font-weight: bold;
+}
+main a{
+    color: var(--cor4);
+    font-weight: bold;
+    text-decoration: none;
+}
+main a:hover{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor0));
+    transition-duration: 2s;
+    border-radius: 5px;
+}
+a.externo::after{
+    content: '🔗';
+}
+img{
+    width: 100%;
+}
+.img-peq{
+    max-width: 350px;
+}
+iframe{ /* Quando aprendi esse uso da largura em 100% para tornar a imagem respondiva, testei aqui no vídeo e, aparentemente, funcionou. Está correto? Funciona em todos os navegadores? (Testar. Tentei ver pelo caniuse.com mas não soube como colocar lá). */
+    width: 100%;
+}
+.video{
+    background-color: var(--cor4);
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    outline: 0px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.233);
+}
+h3{
+    background-color: var(--cor3);
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+    padding: 21px;
+    margin: -29px -30px 0px -30px;
+    text-align: left;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+aside{
+    background-color: var(--cor0);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.192);
+}
+aside ul{
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.7em;
+}
+aside p{
+    padding: 10px;
+}
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+footer>a{
+    color: white;
+}
+.curiosidades{
+    border: 5px solid var(--cor4);
+    width: fit-content;
+    margin: 20px auto 5px auto;
+    outline: 20px;
+}
