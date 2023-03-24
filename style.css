@@ -181,6 +181,9 @@ footer{
 footer>a{
     color: white;
 }
+footer>a:hover{
+    font-weight: bold;
+}
 .curiosidades{
     border: 5px solid var(--cor4);
     width: fit-content;
